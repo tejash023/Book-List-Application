@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+
+  <style>
+    .success, .error{
+      color: white;
+      padding: 7px;
+      margin: 5px 0 15px 0;
+    }
+
+    .success{
+      background: green;
+    }
+    .error{
+      background: rgb(177, 3, 3);
+    }
+  </style>
+  <title>My Book List</title>
+</head>
+<body>
+  <section class="hero is-link">
+    <div class="hero-class">
+    <div class="hero-body">
+      <p class="title">
+        My Book List
+      </p>
+      <p class="subtitle">
+        The only book list you need to keep a track!
+      </p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <form id="book-form">
+        <div>
+          <label for="title" class="label">Title</label>
+          <input class="input" id="title" type="text" placeholder="Text input">
+          </div>
+          <div>
+          <label for="author" class="label mt-2">Author</label>
+          <input class="input" id="author" type="text" placeholder="Text input">
+          </div>
+          <div>
+          <label for="isbn" class="label mt-2">ISBN</label>
+          <input class="input" id="isbn" type="text" placeholder="Text input">
+          </div>
+          <input type="submit" value="Submit" class="button is-info mt-4"></input>
+      </form>
+        
+      
+    
+        <table class="table table is-fullwidth table is-bordered  mt-4">
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Author</th>
+              <th>ISBN</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id = "book-list">
+        
+          </tbody>
+        </table>
+    </div>
+  </section>
+    
+  
+  
+<script src="appes6.js"></script>
+</body>
+</html>
